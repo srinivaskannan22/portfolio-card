@@ -20,7 +20,7 @@
     left: 25%;
     right:25%;
     bottom:25%;
-    overflow: hidden;
+    overflow: auto;
 }
 .card img{
     margin: 10px;
@@ -108,3 +108,62 @@ footer li:active{
     background-image: linear-gradient(rgba(255, 0, 0, 0.432),rgba(255, 255, 255, 0.445));
     color: rgba(0, 0, 0, 0.486);
 }
+::-webkit-scrollbar{
+        display: none;
+    }
+@media screen and (max-width: 1000px) {
+    .container {
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0.356), rgba(0, 0, 255, 0.233));
+    }
+
+    .card {
+        border: 2px solid black;
+        width: 80%;
+        height: 70%;
+        background-image: linear-gradient(rgba(0, 0, 253, 0.521), white);
+        border-radius: 10%;
+        overflow: auto;
+        position: relative;
+        left: 10%;
+        top: 15%;
+    }
+
+    .card img {
+        position: relative;
+        left: 33%;
+    }
+
+    footer {
+        position: sticky;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.808);
+        width: 100%;
+        height: 50px;
+        z-index: 1;
+    }
+
+    footer > ul {
+        display: flex;
+        text-transform: capitalize;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 8px;
+        list-style: none;
+        justify-content:space-evenly
+    }
+
+    footer > ul > li {
+        border: 0.25px solid rgba(255, 0, 0, 0.623);
+        margin-top: 10px;
+        font-size: 14px; /* Set a reasonable font size */
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0.74), white);
+        border-radius: 10px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+
+}
+
